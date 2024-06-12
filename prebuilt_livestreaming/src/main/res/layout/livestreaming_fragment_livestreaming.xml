@@ -30,13 +30,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 
-  <com.zegocloud.uikit.prebuilt.livestreaming.internal.components.PKBattleView
+  <com.linkid.livestreaming.internal.components.PKBattleView
     android:id="@+id/live_pk_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="invisible" />
 
-  <com.zegocloud.uikit.prebuilt.livestreaming.internal.components.ZegoExitLiveButton
+  <com.linkid.livestreaming.internal.components.LinkIDExitLiveButton
     android:id="@+id/live_top_exit"
     android:layout_width="40dp"
     android:layout_height="40dp"
@@ -80,7 +80,7 @@
       android:textSize="12sp" />
   </RelativeLayout>
 
-  <com.zegocloud.uikit.prebuilt.livestreaming.internal.components.ZegoCountedMemberButton
+  <com.linkid.livestreaming.internal.components.LinkIDCountedMemberButton
     android:id="@+id/live_top_member_count"
     android:layout_width="wrap_content"
     android:layout_height="28dp"
@@ -98,7 +98,7 @@
     app:layout_constraintBottom_toTopOf="@+id/live_bottom_menu_bar"
     app:layout_constraintStart_toStartOf="parent" />
 
-  <com.zegocloud.uikit.prebuilt.livestreaming.internal.components.BottomMenuBar
+  <com.linkid.livestreaming.internal.components.BottomMenuBar
     android:id="@+id/live_bottom_menu_bar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent">
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.widget.ZegoStartLiveButton
+    <com.linkid.livestreaming.widget.LinkIDStartLiveButton
       android:id="@+id/preview_start"
       android:layout_width="150dp"
       android:layout_height="44dp"

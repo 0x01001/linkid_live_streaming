@@ -51,7 +51,7 @@
     app:layout_constraintStart_toEndOf="@id/live_member_item_name"
     app:layout_constraintTop_toTopOf="parent" />
 
-  <com.zegocloud.uikit.prebuilt.livestreaming.widget.ZegoAcceptCoHostButton
+  <com.linkid.livestreaming.widget.LinkIDAcceptCoHostButton
     android:id="@+id/live_member_item_agree"
     android:layout_width="wrap_content"
     android:layout_height="32dp"
@@ -67,7 +67,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
-  <com.zegocloud.uikit.prebuilt.livestreaming.widget.ZegoRefuseCoHostButton
+  <com.linkid.livestreaming.widget.LinkIDRefuseCoHostButton
     android:id="@+id/live_member_item_disagree"
     android:layout_width="wrap_content"
     android:layout_height="32dp"

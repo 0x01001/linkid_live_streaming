@@ -19,12 +19,12 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@id/pk_layout_top">
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.internal.components.ZEGOVideoView
+    <com.linkid.livestreaming.internal.components.LinkIDVideoView
       android:id="@+id/audience_mix_video"
       android:layout_width="match_parent"
       android:layout_height="match_parent" />
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.internal.core.ZegoPKAvatarView
+    <com.linkid.livestreaming.internal.core.LinkIDPKAvatarView
       android:id="@+id/audience_mix_self_icon"
       android:layout_width="0dp"
       android:layout_height="match_parent"
@@ -46,7 +46,7 @@
       app:layout_constraintStart_toStartOf="@+id/audience_mix_self_icon"
       app:layout_constraintTop_toTopOf="@+id/audience_mix_self_icon" />
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.internal.core.ZegoPKAvatarView
+    <com.linkid.livestreaming.internal.core.LinkIDPKAvatarView
       android:id="@+id/audience_mix_other_icon"
       android:layout_width="0dp"
       android:layout_height="match_parent"
@@ -99,12 +99,12 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@id/pk_layout_top">
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.internal.components.ZEGOVideoView
+    <com.linkid.livestreaming.internal.components.LinkIDVideoView
       android:id="@+id/pk_self_video"
       android:layout_width="match_parent"
       android:layout_height="match_parent" />
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.internal.core.ZegoPKAvatarView
+    <com.linkid.livestreaming.internal.core.LinkIDPKAvatarView
       android:id="@+id/pk_self_video_icon"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -129,12 +129,12 @@
     app:layout_constraintStart_toEndOf="@id/pk_self_video_layout"
     app:layout_constraintTop_toBottomOf="@id/pk_layout_top">
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.internal.components.ZEGOVideoView
+    <com.linkid.livestreaming.internal.components.LinkIDVideoView
       android:id="@+id/pk_other_video"
       android:layout_width="match_parent"
       android:layout_height="match_parent" />
 
-    <com.zegocloud.uikit.prebuilt.livestreaming.internal.core.ZegoPKAvatarView
+    <com.linkid.livestreaming.internal.core.LinkIDPKAvatarView
       android:id="@+id/pk_other_video_icon"
       android:layout_width="match_parent"
       android:layout_height="match_parent"

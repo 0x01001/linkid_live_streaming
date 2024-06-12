@@ -14,6 +14,6 @@ dependencyResolutionManagement {
         maven { url 'https://storage.zego.im/maven' }
     }
 }
-rootProject.name = "zego_uikit_prebuilt_live_streaming_android"
+rootProject.name = "linkid_live_streaming"
 include ':app'
 include ':prebuilt_livestreaming'
