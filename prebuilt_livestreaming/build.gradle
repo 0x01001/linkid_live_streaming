@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.library'
+}
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.zegocloud.uikit.prebuilt.livestreaming'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    api 'com.guolindev.permissionx:permissionx:1.7.1'
+    api 'com.github.ZEGOCLOUD:zego_uikit_android:[2.9.6,)'
+}
+
+//task createJar(type: Copy) {
+//    // Specify the output directory
+//    def outputDir = "$buildDir/libs"
+//    // Specify the input directory
+//    def inputDir = "$buildDir/intermediates/compile_library_classes"
+//    // Create the JAR file name
+//    def jarName = "uikit.jar"
+//
+//    // Create the output directory if it doesn't exist
+//    doFirst {
+//        file(outputDir).mkdirs()
+//    }
+//
+//    // Copy compiled classes to the output directory
+//    from(fileTree(dir: inputDir, includes: ['**/*.class']))
+//    into(outputDir)
+//    includeEmptyDirs = false
+//    include('**/*.class')
+//
+//    // Create the JAR file
+//    doLast {
+//        ant.jar(destfile: "$outputDir/$jarName", basedir: outputDir)
+//    }
+//}
+//
+//build.dependsOn createJar
