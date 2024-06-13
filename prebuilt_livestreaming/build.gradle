@@ -1,12 +1,14 @@
-plugins {
-    id 'com.android.library'
-}
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
 android {
     compileSdk 32
 
     defaultConfig {
         minSdk 21
         targetSdk 32
+        versionCode 1
+        versionName "1.0.0"
     }
 
     buildTypes {
@@ -25,6 +27,17 @@ android {
     }
     namespace 'com.linkid.livestreaming'
 }
+
+//publishing {
+//    publications {
+//        create<MavenPublication>("release") {
+//            from(components["release"])
+//            groupId = 'com.github.0x01001'
+//            artifactId = 'linkid_live_streaming'
+//            version = '1.0.0'
+//        }
+//    }
+//}
 
 dependencies {
 

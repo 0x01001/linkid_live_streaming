@@ -18,6 +18,8 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+
+import com.linkid.livestreaming.internal.core.CDNService;
 import com.permissionx.guolindev.PermissionX;
 import com.permissionx.guolindev.callback.RequestCallback;
 import com.zegocloud.uikit.ZegoUIKit;
@@ -247,6 +249,12 @@ public class LinkIDUIKitPrebuiltLiveStreamingFragment extends Fragment implement
         LinkIDUIKitPrebuiltLiveStreamingConfig config = LinkIDLiveStreamingManager.getInstance().getPrebuiltConfig();
         String userID = ZegoUIKit.getLocalUser().userID;
         isLocalUserHost = config.role == LinkIDLiveStreamingRole.HOST;
+
+//        if (config.listCdnUrl.size() > 0){
+//            for (CDNService x : config.listCdnUrl)   {
+//                ZegoUIKit.add
+//            }
+//        }
 
         if (config.turnOnCameraWhenJoining || config.turnOnMicrophoneWhenJoining) {
             requestPermissionIfNeeded((allGranted, grantedList, deniedList) -> {

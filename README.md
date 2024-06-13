@@ -1,4 +1,4 @@
-# linkid_live_streaming_android
+# linkid_live_streaming
 
 - - -
  
@@ -21,6 +21,5 @@
 - Device management
 - Extendable menu bar
 
-## Recommended resources
 
  

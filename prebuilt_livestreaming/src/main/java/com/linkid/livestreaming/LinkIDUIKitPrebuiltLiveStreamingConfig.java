@@ -1,6 +1,9 @@
 package com.linkid.livestreaming;
 
 import android.view.View;
+
+import com.linkid.livestreaming.internal.components.LinkIDJoinRoomListener;
+import com.linkid.livestreaming.internal.core.CDNService;
 import com.zegocloud.uikit.components.audiovideo.ZegoAvatarViewProvider;
 import com.zegocloud.uikit.components.audiovideocontainer.ZegoLayout;
 import com.zegocloud.uikit.components.common.ZegoPresetResolution;
@@ -21,6 +24,7 @@ import com.zegocloud.uikit.service.defines.ZegoMeRemovedFromRoomListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class LinkIDUIKitPrebuiltLiveStreamingConfig {
 
@@ -47,6 +51,8 @@ public class LinkIDUIKitPrebuiltLiveStreamingConfig {
     public LinkIDDialogInfo confirmDialogInfo;
     public transient LinkIDLiveStreamingEndListener LinkIDLiveStreamingEndListener;
     public transient LinkIDLeaveLiveStreamingListener leaveLiveStreamingListener;
+    public List<CDNService> listCdnUrl = new ArrayList<>();
+    public transient LinkIDJoinRoomListener joinRoomListener;
     public transient ZegoMeRemovedFromRoomListener removedFromRoomListener;
     public LinkIDTranslationText translationText = new LinkIDTranslationText();
 
